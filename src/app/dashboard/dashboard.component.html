@@ -1,0 +1,2 @@
+<app-account-list [accounts]="(dashboard$ | async).accounts"></app-account-list>
+<app-user-list [users]="(dashboard$ | async).users" (userDeleteClicked)="deleteUser($event)"></app-user-list>
